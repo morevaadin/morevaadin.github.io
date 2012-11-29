@@ -14,10 +14,12 @@ title : More Vaadin
 tagline: The companion site to Learning Vaadin
 author :
   name : Nicolas Frankel
-  email : nicolas at frankel dot ch
+  email : learnvaadin at frankel dot ch
   github : nfrankel
   twitter : nicolas_frankel
   feedburner : feedname
+copyright :
+  info : All Rights Reserved. This site is not associated in any way with Vaadin Ltd.
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -27,7 +29,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://morevaadin.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -124,7 +126,8 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-
+  pages_list:
+    provider: 'custom'
 
 
   
