@@ -3,13 +3,20 @@
 </div>
 
 <div class="row">
-  <div class="span10">
+  <div class="span9">
     {{ content }}
   </div>
-  <div class="span2">
-    {% capture sidebar %}
+  <div class="sidebar span3">
+    {% capture promotion %}
       {% include promoted.md %}
     {% endcapture %}
-    {{ sidebar | unindent | markdownify }}
+    {% capture latest_posts %}
+      {% include latest_posts.html %}
+    {% endcapture %}
+    {{ promotion | markdownify }}
+    <h2>Latest articles</h2>
+      <ul>
+        {{ latest_posts | markdownify }}
+     </ul>
   </div>
 </div>

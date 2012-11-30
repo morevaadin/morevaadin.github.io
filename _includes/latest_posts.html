@@ -1,0 +1,7 @@
+{% for post in site.posts limit:10 %}
+  <li>
+    <span class="post"><a href="{{ post.url }}">{{ post.title }}</a></span>
+    <br />
+    <span>Submitted on {{ post.date | date_to_string }}</span>
+  </li>
+{% endfor %}
