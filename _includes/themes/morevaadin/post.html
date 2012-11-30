@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span10">
     <span>Submitted on <span>{{ page.date | date_to_long_string }}</span></span>
     {{ content }}
     <hr>
@@ -32,6 +32,12 @@
     </div>
     <hr>
     {% include JB/comments %}
+  </div>
+  <div class="span2">
+    {% capture sidebar %}
+      {% include promoted.md %}
+    {% endcapture %}
+    {{ sidebar | unindent | markdownify }}
   </div>
   
 </div>
