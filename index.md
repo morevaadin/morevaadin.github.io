@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Welcome to More Vaadin
+title: Welcome
+group: navigation
+weight: 1
 ---
 
 {% include JB/setup %}
