@@ -2,6 +2,6 @@
   <li>
     <span class="post"><a href="{{ post.url }}">{{ post.title }}</a></span>
     <br />
-    <span>Submitted on {{ post.date | date_to_string }}</span>
+    <span class="date">Submitted on {{ post.date | date_to_string }}</span>
   </li>
 {% endfor %}
