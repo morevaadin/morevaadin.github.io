@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Vaadin 7 eases your theme development"
 ---
 {% include JB/setup %}
 Vaadin theming is a nice way to reuse your Cascading Style Sheets across different projects. Vaadin 7 adds even more sugar to the whole theming thing since it allows you to use [Syntactically Awesome Stylesheets](http://sass-lang.com/).
