@@ -27,9 +27,11 @@
 
   <body>
     <div id="header">
-      <span id="site-name"><a href="{{ HOME_PATH }}">{{ site.title }}</a></span>
+      <span id="title">
+        <span id="site-name"><a href="{{ HOME_PATH }}">{{ site.title }}</a></span>
         {% if site.tagline %} <span id="slogan">{{ site.tagline }}</span>{% endif %}
-      <span>
+        <span>
+      </span>
       <span class="social-icon">
         {% if site.author.twitter %}<a id="twitter" href="{{ site.author.twitter }}" target="_blank"></a>{% endif %}
         {% if site.author.linkedin %}<a id="linkedin" href="{{ site.author.linkedin }}" target="_blank"></a>{% endif %}

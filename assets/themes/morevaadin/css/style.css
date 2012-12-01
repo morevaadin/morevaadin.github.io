@@ -114,8 +114,13 @@ h2 {
 }
 
 #header {
-  background-color: #2F2F2F;
   padding: 40px;
+  background: #2F2F2F url("../img/banner.png") no-repeat left top;
+}
+
+#title {
+  position: relative;
+  left: 200px;
 }
 
 .navbar {
