@@ -2,12 +2,15 @@
 html, body {
   background-color: #eee;
 }
+
 .navbar {
   margin-bottom: 0;
 }
+
 .container > footer {
   margin-top: 20px;
 }
+
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
@@ -36,7 +39,6 @@ html, body {
   border: 0;
 }
 
-
 /* tag_box ======================================================== */
 
 .tag_box {
@@ -45,12 +47,15 @@ html, body {
 	padding:5px 0 ;
 	overflow:hidden;
 }
+
 .tag_box li {
 	line-height:28px;
 }
+
 .tag_box.inline li {
 	float:left;
 }
+
 .tag_box a {
 	padding: 3px 6px;
 	margin: 2px;
@@ -59,13 +64,143 @@ html, body {
 	border-radius: 3px;
 	text-decoration:none;
 }
+
 .tag_box a span{
 	vertical-align:super;
 	font-size:0.8em;
 }
+
 .tag_box a.active {
 	background:#57A957;
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+body {
+  color: #7A7A7A;
+  background-color: #E8E8E8;
+  font: 0.8em/165% "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+a, a:hover {
+  color: #FF9933;
+}
+
+blockquote {
+  background: url("/assets/themes/morevaadin/img/blockquote.png") no-repeat scroll left top transparent;
+  font-size: 9pt;
+  font-style: italic;
+  padding: 0 55px;
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FF9933;
+  font-family: Myriad Pro, "Lucida Grande", "Lucida Sans Unicode", Segoe UI, Helvetica, Arial, sans-serif;
+  line-height: 120%;
+  margin: 25px 0 20px;
+  text-shadow: 1px 1px 1px #EAF1EA;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+h2 {
+  color: #FF9933;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#header {
+  background-color: #2F2F2F;
+  padding: 40px;
+}
+
+.navbar {
+  border-bottom: 1px solid #353535;
+  border-top: 1px solid #353535;
+}
+
+.navbar-inner {
+  border-radius: 0px;
+  background-color: #222222;
+  background-image: none;
+  padding-left: 0px;
+}
+
+ul.nav li {
+  text-transform:uppercase;
+  font-size: 14px;
+}
+
+.navbar .nav > li > a {
+  color: white;
+}
+
+.navbar .nav > li > a: hover {
+  color: #FF9933;
+}
+
+.sidebar h2 {
+  margin: 0 0 15px;
+  padding: 0 0 5px;
+}
+
+.content {
+  background-color: inherited;
+}
+
+span.date {
+  font-size: 85%;
+}
+
+#site-name {
+  font-size: 130%;
+}
+
+#site-name a:hover {
+  text-decoration: none;
+}
+
+#slogan {
+  color: #D5D5D5;
+}
+
+footer {
+  background: -moz-linear-gradient(center top , #262626 0%, #1A1A1A 100%) repeat scroll 0 0 #1A1A1A;
+  border-top: 1px solid #353535;
+  clear: both;
+  overflow: hidden;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icon {
+  float: right;
+  text-align: right;
+}
+
+span.social-icon a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+a#twitter {
+  background: url("../img/twitter.png") no-repeat;
+}
+
+a#rss {
+  background: url("../img/feed.png") no-repeat;
+}
+
+a#github {
+  background: url("../img/github.png") no-repeat;
+}
+
+a#linkedin {
+  background: url("../img/linkedin.png") no-repeat;
+}
+

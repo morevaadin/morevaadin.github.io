@@ -1,6 +1,4 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
+<h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 
 <div class="row">
   <div class="span9">
@@ -14,7 +12,7 @@
       {% include latest_posts.html %}
     {% endcapture %}
     {{ promotion | markdownify }}
-    <h2>Latest articles</h2>
+    <h2>Recent articles</h2>
       <ul>
         {{ latest_posts | markdownify }}
      </ul>
