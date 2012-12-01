@@ -6,7 +6,7 @@ title : Integrating HTML and JavaScript - part 1
 In Vaadin 6, extending existing components required creating subclasses and overriding the desired methods when possible. When not, this meant hacking protected methods and/or copying-pasting code. In this two-part serie, we'll have a look at how Vaadin 7 makes it easier for us to extend components through "composition" rather than inheritance:
 
 + This article will show us how to create an extension using HTML and the GWT API
-+ In the [follow-up](/content/integrating-html-and-javascript-part-2), we will create an extension using purely JavaScript, without any GWT dependency! 
++ In the [follow-up]({% post_url 2012-08-12-integrating-html-and-javascript-part-2 %}), we will create an extension using purely JavaScript, without any GWT dependency! 
 
 Vaadin 7 introduces the concept of extension. Extensions are features that can be attached to existing components (or applications) and may have a GUI part.
 
@@ -153,4 +153,4 @@ public class TooltipExtension extends AbstractExtension {
 {% endhighlight %}
 You can find sources for this article on [Github](https://github.com/nfrankel/More-Vaadin/tree/master/html-js-integration).
 
-In the [next part](/content/integrating-html-and-javascript-part-2) of this serie, we'll look at how to integrate already existing JavaScript frameworks that provide tootlip features.
+In the [next part]({% post_url 2012-08-12-integrating-html-and-javascript-part-2 %}) of this serie, we'll look at how to integrate already existing JavaScript frameworks that provide tootlip features.

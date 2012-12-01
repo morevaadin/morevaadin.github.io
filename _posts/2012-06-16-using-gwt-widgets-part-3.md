@@ -4,7 +4,7 @@ title : Using GWT widgets - Part 3
 tags  : [vaadin 7, client, gwt]
 ---
 
-This is the final part in our articles serie regarding using GWT widgets in Vaadin 7. In the [first part](/content/using-gwt-widgets-vaadin-7-part-1), we looked at how to wrap GWT widgets in Vaadin components. In the [second part](/content/using-gwt-widgets-vaadin-7-part-2), we detailed how to configure widgets from components. In this third and final part, we'll see how to intercept events coming from the client side in our components.
+This is the final part in our articles serie regarding using GWT widgets in Vaadin 7. In the [first part]({% post_url 2012-06-02-using-gwt-widgets-part-1 %}), we looked at how to wrap GWT widgets in Vaadin components. In the [second part]({% post_url 2012-06-09-using-gwt-widgets-part-2 %}), we detailed how to configure widgets from components. In this third and final part, we'll see how to intercept events coming from the client side in our components.
 
 The central component is client-server communication is an interface extending `ServerRpc`. In our context, the widget is a button so the only method of the interface should be something like `click()`:
 {% highlight java linenos %}

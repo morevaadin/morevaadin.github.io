@@ -3,11 +3,11 @@ layout: post
 title : Integrating HTML and JavaScript - part 2
 ---
 
-In the [previous article](/content/integrating-html-and-javascript-part-1), we successfully integrated a custom-made tooltip over our hyperlinks. In this article, we'll integrate an already existing tooltip library.
+In the [previous article]({% post_url 012-07-28-integrating-html-and-javascript-part-1 %}), we successfully integrated a custom-made tooltip over our hyperlinks. In this article, we'll integrate an already existing tooltip library.
 
 Since we already played with Twitter Bootstrap library, we'll try to reuse their code.
 
-If you follow this site regularly, we already used the Bootstrap library, or more exactly the GWT porting of the library in the [Using GWT widgets](/content/using-gwt-widgets-vaadin-7-part-1) serie. This time, we'll use the library directly, without any third-party GWT wrapper.
+If you follow this site regularly, we already used the Bootstrap library, or more exactly the GWT porting of the library in the [Using GWT widgets]({% post_url 2012-06-02-using-gwt-widgets-part-1 %}) serie. This time, we'll use the library directly, without any third-party GWT wrapper.
 
 The process mirrors what we already did when creating custom HTML code.
 

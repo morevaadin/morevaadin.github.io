@@ -59,5 +59,5 @@ public class LoginView extends CustomComponent {
 Important notes:
 
 1. `MainView` is another custom component with the components we want displayed
-1. Don't forget [separation of concerns]({% 2012-02-18-separation-of-concerns %}), the switching behavior mixed in the GUI code is shown only for readability purposes
+1. Don't forget [separation of concerns]({% post_url 2012-02-18-separation-of-concerns %}), the switching behavior mixed in the GUI code is shown only for readability purposes
 1. Login and logout should perhaps be designed at the application level so we could call `getApplication().login()`

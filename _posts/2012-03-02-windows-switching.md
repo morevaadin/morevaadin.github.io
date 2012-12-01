@@ -5,7 +5,7 @@ tags: [ vaadin 6, server]
 ---
 {% include JB/setup %}
 
-In my [last article](/content/use-views-not-windows), I definitely advised that when needing to radically change components displayed on the screen, you need to switch the main window's contents - the view - and not the window itself.
+In my [last article]({% post_url 2012-02-25-use-view-not-windows %}), I definitely advised that when needing to radically change components displayed on the screen, you need to switch the main window's contents - the view - and not the window itself.
 
 Fortunately, this confusion is not possible anymore in Vaadin 7 since the application object and the main window are merged into the [UI] class.
 {% highlight java %}

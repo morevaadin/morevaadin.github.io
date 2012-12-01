@@ -4,7 +4,7 @@ title : Navigation basics
 tags  : [server]
 ---
 
-Vaadin implements the Single-Page Interface, meaning screen content can change but URL stays the same, as opposed to standard web application page navigation. Switching screen content is described in [Use views, not windows](/content/use-views-not-windows). Given SPI and before Vaadin 7, however, the only way to link a set of content with an URL was to use the [UriFragmentUtility](https://vaadin.com/api/com/vaadin/ui/UriFragmentUtility.html) component. With Vaadin 7, however, there's no need of such a component: all you need is to use the Navigator API.
+Vaadin implements the Single-Page Interface, meaning screen content can change but URL stays the same, as opposed to standard web application page navigation. Switching screen content is described in [Use views, not windows]({% post_url 2012-02-25-use-view-not-windows %}). Given SPI and before Vaadin 7, however, the only way to link a set of content with an URL was to use the [UriFragmentUtility](https://vaadin.com/api/com/vaadin/ui/UriFragmentUtility.html) component. With Vaadin 7, however, there's no need of such a component: all you need is to use the Navigator API.
 
 The Navigation API is composed of three main classes:
 

@@ -98,4 +98,4 @@ GWT reads Java code and renders HTML and JavaScript. When using standard Vaadin 
     </plugins>
 </build>
 {% endhighlight %}
-Sources for this article can be found on [GitHub](https://github.com/nfrankel/More-Vaadin/tree/master/custom-component-example). In the [following part](/content/using-gwt-widgets-vaadin-7-part-1), we'll detail how to let developers customize widgets though components on the server side.
+Sources for this article can be found on [GitHub](https://github.com/nfrankel/More-Vaadin/tree/master/custom-component-example). In the [following part]({% post_url 2012-06-09-using-gwt-widgets-part-2 %}), we'll detail how to let developers customize widgets though components on the server side.

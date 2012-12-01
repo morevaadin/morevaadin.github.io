@@ -9,7 +9,7 @@ Along with [Apache Shiro](https://shiro.apache.org/), [Spring Security](http://s
 Credits go to Henri Sara of the Vaadin team who provided [his valuable insight](https://vaadin.com/forum/-/message_boards/view_message/569686#_19_message_373038).
 Requirements: this article assumes you know some Spring Security and uses advanced Vaadin navigator concepts
 
-Nominal uses of Spring Security mandate for the use of subcontexts in the webapp, each one then can be configured for different access levels. For example, `/public` is accessible with anonymous access, while `/private` needs some specific authorizations. Unfortunately, Vaadin doesn't work that way: [views](http://morevaadin.com/content/navigation-basics-vaadin-7) are translated into fragments, not subcontexts. From this point on, there are two options: either tweak Vaadin to use subcontexts, or embed Spring Security inside our application. We will use the latter. 
+Nominal uses of Spring Security mandate for the use of subcontexts in the webapp, each one then can be configured for different access levels. For example, `/public` is accessible with anonymous access, while `/private` needs some specific authorizations. Unfortunately, Vaadin doesn't work that way: [views]({% post_url 2012-07-07-navigation-basics %}) are translated into fragments, not subcontexts. From this point on, there are two options: either tweak Vaadin to use subcontexts, or embed Spring Security inside our application. We will use the latter. 
 
 + The first step is to create a Login form view, that send login events.
 + The root subscribes to login events, and handles authentication attemps through a dedicated authentication handler.
