@@ -14,9 +14,10 @@ title : More Vaadin
 tagline: The companion site to Learning Vaadin
 author :
   name : Nicolas Frankel
-  email : learnvaadin at frankel dot ch
-  github : nfrankel
-  twitter : nicolas_frankel
+  email : mailto:learnvaadin(at)frankel(dot)ch
+  linkedin: http://linkedin.com/in/nicolasfrankel
+  github : https://github.com/nfrankel/More-Vaadin
+  twitter : https://fr.twitter.com/learnvaadin
   feedburner : feedname
 copyright :
   info : All Rights Reserved. This site is not associated in any way with Vaadin Ltd.
