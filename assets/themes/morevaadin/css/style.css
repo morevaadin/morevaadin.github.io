@@ -209,3 +209,7 @@ a#linkedin {
   background: url("../img/linkedin.png") no-repeat;
 }
 
+p {
+  font-family: inherit;
+}
+
