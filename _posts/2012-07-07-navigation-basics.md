@@ -8,7 +8,8 @@ Vaadin implements the Single-Page Interface, meaning screen content can change b
 
 The Navigation API is composed of three main classes:
 
-+ The `View` interface lies at the root of the API. A view is an component (that should generally be a `Component`) that is managed by a `Navigator`. 
+<ul>
+<li>The <code>View</code> interface lies at the root of the API. A view is an component (that should generally be a <code>Component</code>) that is managed by a <code>Navigator</code>. 
 {% highlight java linenos %}
 public class ViewLayout extends VerticalLayout implements View {
  
@@ -18,9 +19,9 @@ public class ViewLayout extends VerticalLayout implements View {
     public void navigateTo(String fragmentParameters) {}
 }
 {% endhighlight %}
-Note that the `navigateTo()` method is just a hook: if you don't need to do anything, just leave it empty as in the above example. On the contrary, you could use the method to add a specific content on the view, depending on the fragment i.e. using the same view class but setting components based on the fragment.
-+ Next comes the `ViewDisplay` interface. This type is just a placeholder for a view to be displayed on. Navigator provides two implemetations: `SimpleViewDisplay` is a component that can be part of any container, while `ComponentContainerViewDisplay` is used internally and is a wrapper around a component container. In the latter case, just provide the container and the navigator takes care of the plumbing.
-+ Finally, the `Navigator` component is basically a map with views as values. Keys are strings that are used to both store the view in the navigator and to access it through a URL fragment. 
+Note that the <code>navigateTo()</code> method is just a hook: if you don't need to do anything, just leave it empty as in the above example. On the contrary, you could use the method to add a specific content on the view, depending on the fragment i.e. using the same view class but setting components based on the fragment.
+<li>Next comes the <code>ViewDisplay</code> interface. This type is just a placeholder for a view to be displayed on. Navigator provides two implemetations: <code>SimpleViewDisplay</code> is a component that can be part of any container, while <code>ComponentContainerViewDisplay</code> is used internally and is a wrapper around a component container. In the latter case, just provide the container and the navigator takes care of the plumbing.
+<li>Finally, the <code>Navigator</code> component is basically a map with views as values. Keys are strings that are used to both store the view in the navigator and to access it through a URL fragment. 
 {% highlight java linenos %}
 Panel panel = new Panel();
  
@@ -28,7 +29,7 @@ Navigator navigator = new Navigator(panel);
  
 navigator.addView("aview", new ViewLayout());
 {% endhighlight %}
-Note that if you provide content for your initial panel but dont make it accessible as a view, users won't be able to access it after the initial display. 
+Note that if you provide content for your initial panel but dont make it accessible as a view, users won't be able to access it after the initial display.</ul>
 
 From this point on, there are two ways to access a view:
 
