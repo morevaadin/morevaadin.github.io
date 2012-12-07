@@ -1,8 +1,7 @@
 <h1>{{ page.title }}</h1>
-
+<span class="date">Submitted on <span>{{ page.date | date_to_long_string }}</span></span>
 <div class="row">
   <div class="span9">
-    <span class="date">Submitted on <span>{{ page.date | date_to_long_string }}</span></span>
     {{ content }}
     <hr>
   {% unless page.tags == empty %}
