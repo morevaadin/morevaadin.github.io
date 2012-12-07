@@ -216,3 +216,7 @@ p {
 blockquote p {
   font-size: 12px;
 }
+
+blockquote small:last-child {
+  text-align: right;
+}
