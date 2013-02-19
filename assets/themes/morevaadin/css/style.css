@@ -105,13 +105,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 32px;
   margin: 0 0 20px;
-  margin-bottom: 0;
 }
 
 h2 {
   color: #FF9933;
   font-size: 20px;
   font-weight: normal;
+  margin-top: 5px;
 }
 
 #header {
@@ -164,6 +164,7 @@ span.date {
 }
 
 h1 + span.date {
+  margin-top: -20px;
   margin-bottom: 20px;
 }
 
