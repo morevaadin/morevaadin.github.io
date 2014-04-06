@@ -95,4 +95,7 @@ button.addClickListener(e -> bus.post(new ButtonClickedEvent(container)));
 
 eventBus.register(new ShowClickMeListener());
 {% endhighlight %}
+
 IMHO, this is the right usage of lambdas in regard to Vaadin event listeners.
+
+You can find relevant sources for this article on [Github](https://github.com/nfrankel/More-Vaadin/tree/master/lambda).
