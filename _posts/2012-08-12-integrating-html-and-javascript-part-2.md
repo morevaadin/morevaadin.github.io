@@ -3,7 +3,7 @@ layout: post
 title : Integrating HTML and JavaScript - part 2
 ---
 
-In the [previous article]({% post_url 012-07-28-integrating-html-and-javascript-part-1 %}), we successfully integrated a custom-made tooltip over our hyperlinks. In this article, we'll integrate an already existing tooltip library.
+In the [previous article]({% post_url 2012-07-28-integrating-html-and-javascript-part-1 %}), we successfully integrated a custom-made tooltip over our hyperlinks. In this article, we'll integrate an already existing tooltip library.
 
 Since we already played with Twitter Bootstrap library, we'll try to reuse their code.
 
