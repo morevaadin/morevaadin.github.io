@@ -21,7 +21,7 @@ public class BootstrapButton extends AbstractComponent {
     ...
 }
 {% endhighlight %}
-+ The second class to create is the client widget itself. It's very simple: just extend the wanted GWT widget (the Bootstrap button in our case). Note that **it's mandatory to locate it in a `ui.client` subpackage** relative to the above component:
++ The second class to create is the client widget itself. It's very simple: just extend the wanted GWT widget (the Bootstrap button in our case). Note that **it's mandatory to locate it in a `client.ui` subpackage** relative to the above component:
 {% highlight java linenos %}
 public class VBootstrapButton extends Button {
  
@@ -43,7 +43,7 @@ public class BootstrapButtonConnector extends AbstractComponentConnector {
     }
 }
 {% endhighlight %}
-It also has to be located in the `ui.client` subpackage. 
+It also has to be located in the `client.ui` subpackage. 
 
 GWT reads Java code and renders HTML and JavaScript. When using standard Vaadin components, the code is precompiled and available in the Vaadin JAR, but when adding third-party widgets, we need to compile both Vaadin and the other widgets. In order to achieve this, two things are necessary:
 
