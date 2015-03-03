@@ -62,7 +62,7 @@
     </div> <!-- /container -->
 
     <footer>
-      <p>&copy; {{ site.author.name }} 2012. {{ site.copyright.info }}</p>
+      <p>&copy; {{ site.author.name }} 2012-{{ site.time | date: '%Y' }}. {{ site.copyright.info }}</p>
     </footer>
 
     {% include JB/analytics %}

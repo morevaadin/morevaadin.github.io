@@ -111,7 +111,7 @@ h2 {
   color: #FF9933;
   font-size: 20px;
   font-weight: normal;
-  margin-top: 5px;
+  margin-top: 18px;
 }
 
 #header {
@@ -228,3 +228,8 @@ blockquote small:last-child {
   text-align: right;
 }
 
+div.imagecenter {
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+}
