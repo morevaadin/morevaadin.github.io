@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Boot & JavaConfig integration"
+title: "Spring Boot and JavaConfig integration"
 tags: [vaadin 7, server, spring, servlet 3.0]
 ---
 {% include JB/setup %}
