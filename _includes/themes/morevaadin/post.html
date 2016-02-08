@@ -1,19 +1,36 @@
 <h1>{{ page.title }}</h1>
 <span class="date">Submitted on <span>{{ page.date | date_to_long_string }}</span></span>
 <div class="row">
-  <div class="span9">
+  <div class="col-md-9">
     {{ content }}
     <hr>
+  </div>
+  <div class="sidebar col-md-3">
+    {% capture promotion %}
+      {% include promoted.md %}
+    {% endcapture %}
+    {% capture latest_posts %}
+      {% include latest_posts.html %}
+    {% endcapture %}
+    {{ promotion | markdownify }}
+    <h2>Recent articles</h2>
+      <ul>
+        {{ latest_posts | markdownify }}
+     </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
   {% unless page.tags == empty %}
-    <div>Tags:
+    <div><p>Tags:</p>
       <ul class="tag_box">
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
       </ul>
     </div>
-  {% endunless %}  
-    <div class="pagination">
-      <ul>
+  {% endunless %}
+    <nav>
+      <ul class="pagination">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
       {% else %}
@@ -26,21 +43,9 @@
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
       </ul>
-    </div>
+    </nav>
     <hr>
     {% include JB/comments %}
-  </div>
-  <div class="sidebar span3">
-    {% capture promotion %}
-      {% include promoted.md %}
-    {% endcapture %}
-    {% capture latest_posts %}
-      {% include latest_posts.html %}
-    {% endcapture %}
-    {{ promotion | markdownify }}
-    <h2>Recent articles</h2>
-      <ul>
-        {{ latest_posts | markdownify }}
-     </ul>
+    </div>
   </div>
 </div>

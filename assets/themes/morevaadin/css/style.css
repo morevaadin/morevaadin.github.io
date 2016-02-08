@@ -3,6 +3,15 @@ html, body {
   background-color: #eee;
 }
 
+p {
+  line-height: 18px;
+}
+
+p, li,#slogan {
+  font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -50,6 +59,7 @@ html, body {
 
 .tag_box li {
 	line-height:28px;
+	display: inline;
 }
 
 .tag_box.inline li {
@@ -169,7 +179,7 @@ h1 + span.date {
 }
 
 #site-name {
-  font-size: 130%;
+  font-size: 200%;
 }
 
 #site-name a:hover {
@@ -232,4 +242,18 @@ div.imagecenter {
   margin: 15px;
   width: 100%;
   text-align: center;
+}
+
+.navbar-nav, .navbar-default .container-fluid {
+  background-color: #222222;
+}
+
+.navbar-default {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
 }
